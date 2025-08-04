@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Booking form</title>
+    <style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    padding: 30px;
+  }
+
+  form {
+    max-width: 500px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #dce3eb;
+  }
+
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #34495e;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccd6dd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    background-color: #fdfdfd;
+    color: #333;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 0 0 2px rgba(41, 128, 185, 0.2);
+  }
+
+  button {
+    width: 100%;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #1f6391;
+  }
+
+  div {
+    margin-bottom: 20px;
+  }
+</style>
+
+</head>
+<body>
+    <h1>Travel Booking form</h1>
+    <form action="">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+        </div>
+
+         <div>
+            <label for="age">Age</label>
+            <input id="age" type="number" placeholder="Enter your age" required>
+            </div>
+
+             <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+             </div>
+
+             <div>
+                <label for="phoneno">Phone</label>
+                <input id="phoneno" type="tel" placeholder="Enter your phone number" required>
+             </div>
+
+             <div>
+                 <label for="destination">Destination:</label>
+                 <select id="destination" name="destination" required>
+                 <option value="">--Select--</option>
+                 <option value="ayodhya">Ayodhya</option>
+                 <option value="varanasi">Varanasi</option>
+                 <option value="mumbai">Mumbai</option>
+                 <option value="goa">Goa</option>
+                 </select>
+             </div>
+
+             <div>
+                <label for="travel_date">Travel Date</label>
+                <input id="travel_date" type="date"  required>
+             </div>
+
+             <div>
+                <label for="address">Address</label>
+                <textarea name="address" id="address"></textarea>
+             </div>
+
+             <div>
+                <button type="submit">submit</button>
+
+             </div>
+    </form>
+</body>
+</html>

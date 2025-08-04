@@ -1,0 +1,216 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f0f2d;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+.logo img {
+    width: 90px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffffcc;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f75c57;
+}
+
+/* Hero Section */
+.hero {
+    text-align: left;
+    padding: 100px 60px 80px;
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero span {
+    color: #f75c57;
+}
+
+.hero p {
+    color: #b2b2d2;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.btn {
+    background-color: #f75c57;
+    color: #fff;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d34743;
+}
+
+/* Skills Section */
+.skills {
+    padding: 100px 60px;
+    background-color: #0f0f2d;
+}
+
+.skills h2 {
+    font-size: 2.6rem;
+    color: #f75c57;
+    text-align: left;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.skills h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #f75c57;
+    margin-top: 10px;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.skill-card {
+    background-color: #1a1a3d;
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+}
+
+.skill-card img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #b2b2d2;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Contact Section */
+.contact {
+    padding: 100px 60px;
+    background-color: #1a1a3d;
+    border-radius: 40px 40px 0 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input {
+    padding: 14px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2a2a4d;
+    color: #fff;
+    font-size: 1rem;
+}
+
+form input::placeholder {
+    color: #a5a5c5;
+}
+
+form button {
+    background-color: #f75c57;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #d34743;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .hero {
+        padding: 80px 30px 60px;
+    }
+
+    .skills {
+        padding: 60px 30px;
+    }
+
+    .contact {
+        padding: 60px 30px;
+    }
+}
